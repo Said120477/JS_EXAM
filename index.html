@@ -1,0 +1,153 @@
+<!DOCTYPE=html>
+
+	<head>
+		<title class="site-name">AmazinglyCool</title>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8">
+
+		<!-- STYLES -->
+		<link href="styles/default.css" rel="stylesheet" type="text/css">
+		<link href="styles/index.css" rel="stylesheet" type="text/css">
+
+		<!-- ICONS -->
+		<link href="images/index.ico" rel="shortcut icon" type="image/x-icon">
+
+		<!-- SCRIPTS -->
+		<script type="text/javascript" src="scripts/default.js" defer></script>
+		<script type="text/javascript" src="scripts/index.js" defer></script>
+	</head>
+
+	<body>
+		<!-- HEADER -->
+		<header>
+			<div class="column-left">
+				<h1><a class="site-name" href="index.html">AmazinglyCool</a></h1>
+				<h2 id="clickCounter">Счётчик кликов: 0</h2>
+			</div>
+			<div class="column-right">
+				<nav>
+					<ul>
+						<a href="#">
+							<li class="first">Главная</li>
+						</a>
+						<a href="#">
+							<li>1 Пункт</li>
+						</a>
+						<a href="#">
+							<li>2 Пункт</li>
+						</a>
+						<a href="#">
+							<li>3 Пункт</li>
+						</a>
+						<a href="#">
+							<li>4 Пункт</li>
+						</a>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- MAIN -->
+		<div class="main-container">
+			<main>
+				<div id="columnA">
+					<h2>Добро пожаловать на сайт!</h2>
+					<p>Это CSS-HTML шаблон сайта. Его можно свободно назвать HTML-исходником.</p>
+					<p>Он имеет название <span class="site-name">AmazinglyCool</span>, и создан специально для того,
+						чтобы Вы добавили на него
+						некоторый
+						JavaScript.</p>
+					<p>Для большей схожести с настоящим сайтом, ниже приведён список ложных ссылок:</p>
+					<ul>
+						<li><a href="#">Первая ссылка</a></li>
+						<li><a href="#">Вторая ссылка</a></li>
+						<li><a href="#">Третья ссылка</a></li>
+						<li><a href="#">Четвёртая ссылка</a></li>
+						<li><a href="#">Пятая ссылка</a></li>
+					</ul>
+					<h2>Список заданий</h2>
+					<p>Ниже приведён список заданий. На страницу нужно добавить дополнительный контент, который будет
+						включать в себя обработку событий пользовательского интерфейса, взаимодействие с пользователем и
+						работу с объектом.</p>
+					<p class="tasks">Сделайте сайт зависимым от количества кликов. Каждый раз при запуске сайта должен
+						устанавливаться лимит кликов (случайное целое число от 30 до 50). Когда пользователь исчерпает
+						лимит, должно появляться модальное окно с сообщением "Клики закончились". Сообщение не должно
+						появляться при повторных кликах после того, как они были исчерпаны. Количество совершённых
+						кликов
+						выводится в хедере сайта в соответствующем заголовке.</p>
+						<h1><span id="clickCount">0</span></h1>
+						<button id="clickButton">Кликни меня!</button>
+						<div id="modal" class="hidden"> <p>Клики закончились</p> <button id="closeModal">Закрыть</button>
+						</div>
+
+					<p class="tasks">Здесь создайте контейнер DIV красного цвета. Раз в секунду он должен менять свой
+						цвет
+						на следующий цвет радуги (красный, оранжевый, жёлтый, зелёный, голубой, синий, фиолетовый).
+						Цвета
+						должны быть замкнутыми, т.е. после фиолетового цвета снова ставится красный.</p>
+					<div id="rainbow-div"></div>
+
+
+					<p class="tasks">В правой нижней части страницы есть круглый ASIDE. При нажатии на него должны
+						появляться запросы на ввод новых координат для данного объекта. Для ввода используйте prompt.
+						Как
+						только координаты были введены, ASIDE перемещается на новую позицию. Новые координаты должны
+						записываться в Cookies и автоматически применяться к элементу при загрузке страницы.</p>
+				</div>
+
+
+				<div id="columnB">
+					<h2>Последние новости</h2>
+					<p class="tasks">Здесь разместите кнопку, при нажатии на которую пользователь сможет добавить новую
+						дату
+						с событием в список ниже.</p>
+					<h1>Список событий</h1>
+					<input type="text" id="eventDate" placeholder="Введите дату (ДД.ММ.ГГГГ)">
+					<input type="text" id="eventDescription" placeholder="Введите описание события">
+					<button onclick="addEvent()">Добавить событие</button>
+					<ul id="eventList"></ul>
+
+
+
+					<div id="dates">
+						<p><span class="strong-date">[11/08/2018]</span> Дальше будут просто даты с событиями. <a
+								href="#">Читать&#8230;</a></p>
+						<p><span class="strong-date">[10/07/2019]</span> Вот они. <a href="#">Читать&#8230;</a></p>
+						<p><span class="strong-date">[09/06/2020]</span> Они тут. <a href="#">Читать&#8230;</a></p>
+						<p><span class="strong-date">[26/03/2024]</span> А это сегодняшняя дата! Надо же, откуда она
+							здесь?
+							<a href="#">Читать&#8230;</a>
+						</p>
+					</div>
+					<h2 class="site-name">AmazinglyCool - сайт об HTML, CSS, JavaScript и многом другом!</h2>
+					<p class="tasks">Здесь разместите кнопку, с помощью которой пользователь сможет добавить в список ниже новую ссылку.</p>
+					<ul id="linkList"></ul>
+					<input type="text" id="newLink" placeholder="Введите ссылку">
+					<button onclick="addLink()">Добавить ссылку</button>
+
+					<ul>
+						<li><a href="#">Первая ссылка</a></li>
+						<li><a href="#">Вторая ссылка</a></li>
+						<li><a href="#">Третья ссылка</a></li>
+						<li><a href="#">Четвёртая ссылка</a></li>
+						<li><a href="#">Пятая ссылка</a></li>
+					</ul>
+					<p class="tasks">Здесь должна быть кнопка, которая позволяет пользователю поменять название сайта.
+						Учтите, что название меняется везде, где встречается на сайте.</p>
+					<input type="text" id="siteTitleInput" placeholder="Введите новое название сайта">
+					<button id="changeTitleButton">Сменить название сайта</button>
+				</div>
+
+			</main>
+		</div>
+
+		<!-- FOOTER -->
+		<footer>
+			<p>Copyright &copy; <span id="year">YYYY</span> <a id="lovercase" class="site-name" href="index.html">amazinglycool.com.</a></p>
+			<p id="pageInfo"> Страница 1. Главная </p>
+		</footer>
+
+		<!-- ASIDE -->
+		<aside><button>A</button></aside>
+	</body>
+
+	</html>
